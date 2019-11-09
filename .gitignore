@@ -1,0 +1,5 @@
+**/.ipynb_checkpoints
+data-og/
+**/__pycache__
+*.un~
+!data-og/empty.txt
