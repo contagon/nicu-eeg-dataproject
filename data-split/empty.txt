@@ -1,0 +1,1 @@
+After running script, individual seizures will be stored here.

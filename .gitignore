@@ -1,6 +1,7 @@
 **/.ipynb_checkpoints
-data-og/
-data/
 **/__pycache__
 *.un~
-!data-og/empty.txt
+*.pkl
+*.edf
+*.csv
+*.mat
