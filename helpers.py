@@ -53,31 +53,3 @@ def plot_signal(data, channels=None, slices=None):
     # Set common labels
     fig.text(0.5, 0.01*n, 'Time (sec)', ha='center', va='center')
     fig.text(0.08, 0.5, 'mV', ha='center', va='center', rotation='vertical')
-    
-    
-#     name any feature you'd like to add here
-#             dic['Expert'] = data.expert
-#             #max value found in each channel
-#             max_val = data.add_prefix('Max_Value_')
-#             #max frequency found in each channel
-#             max_freq = data_fft.add_prefix('Max_Freq_')
-#             #max frequency value as found in each channel
-#             max_freq_val = data_fft.add_prefix('Max_Freq_Value_')
-#             dic = {**dic, **max_freq.idxmax().to_dict(), **max_freq_val.max().to_dict(), **max_val.max().to_dict()}
-#             #whether it was a seizure or not
-#             dic['Seizure'] = data.seizure
-#             #same as before maxes, but across all the channels
-#             dic['Max_Freq'] = data_fft.drop("ECG EKG", axis=1).stack().idxmax()[0]
-#             dic['Max_Freq_Value'] = data_fft.drop("ECG EKG", axis=1).max().max()
-#             dic['Max_Value'] = data.drop("ECG EKG", axis=1).max().max()
-
-# import statsmodels.api as sm
-# data = read_data('data-final/eeg.pkl')
-# Y = data['Seizure']
-# X = data.drop('Seizure', axis=1)
-
-# filter_col = [col for col in df if (col.startswith('Freq') and not col.endswith("ECG EKG"))]
-# results = sm.Logit(Y,X[filter_col]).fit_regularized(alpha=1, L1_wt=0)
-# print(results.params)
-# print(X[filter_col].shape)
-# np.linalg.matrix_rank(X[filter_col].values.T@X[filter_col].values, tol=1e-8)
