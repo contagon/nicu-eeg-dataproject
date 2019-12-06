@@ -52,4 +52,4 @@ def plot_signal(data, channels=None, slices=None):
         ax[i].set_title(chan)
     # Set common labels
     fig.text(0.5, 0.01*n, 'Time (sec)', ha='center', va='center')
-    fig.text(0.08, 0.5, 'mV', ha='center', va='center', rotation='vertical')
+    fig.text(0.08, 0.5, r'$\mu$V', ha='center', va='center', rotation='vertical')
